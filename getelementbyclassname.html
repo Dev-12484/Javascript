@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <p id="p1" class="p">Paragraph 1</p>
+        <p id="p2" class="p">Paragraph 2</p>
+        <p id="p3" class="p">Paragraph 3</p>
+        <p id="p4" class="p">Paragraph 4</p>
+        <p id="p5" class="p">Paragraph 5</p>
+        <p id="p6" class="p">Paragraph 6</p>
+        <button onclick="change()">Click me</button>
+        <script>
+            function change(){
+                // document.getElementById("p1").style.color="red";
+                // document.getElementById("p2").style.color="red";
+                // document.getElementById("p3").style.color="red";
+                // document.getElementById("p4").style.color="red";
+                // document.getElementById("p5").style.color="red";
+                // document.getElementById("p6").style.color="red";
+                var x = document.getElementsByClassName("p");
+                // x is not a regular variable it is an array of the classes
+                for ( var i = 0 ; i < x.length ; i++){
+                    x[i].style.color="red";
+                    x[i].style.fontFamily="jokerman";
+                }
+            }
+        </script>
+    </body>
+</html>

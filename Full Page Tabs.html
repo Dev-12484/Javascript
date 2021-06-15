@@ -1,0 +1,150 @@
+<html>
+    <head>
+        <title>Full Page Tabs</title>
+        <style>
+            ul{
+                list-style:none;
+            }
+            *{
+                margin:0px ; 
+                padding:0px;
+            }
+            .navbar ul a li{
+                float:right;
+                padding:0px 20px;
+                line-height: 60px;
+                transition: all 1s;
+            }
+            .navbar{
+                background-color:black;
+                height:60px;
+            }
+            .navbar ul a{
+                size: 18px;
+                color: white;
+                font-family:jokerman;
+            }
+            .navbar ul li:hover{
+                background-color:red;
+                font-size: 30px;
+            }
+            .navbar h1{
+                float:left;
+                color:white;
+                line-height:60px;
+                margin-right:40px;
+                transition: all 0.4s;
+            }
+            .navbar img{
+                float:left;
+                border-radius: 50%;
+                line-height:60px;
+                margin-right: 50px;
+                transition: all 0.5s;
+            }
+            .navbar h1:hover{
+                margin-right: 70px;
+                background-color: yellow;
+            }
+            .navbar img:hover{
+                margin-right: 60px;
+                background-color:red;
+            }
+
+
+
+            /*CONTENT*/
+
+            .content{
+                height: 100% ;
+                background-color: lightgray;
+                padding:30px;
+                margin:5px;
+                display:none;
+                position: relative;
+                animation-name:cool;
+                animation-duration: 2s;
+
+            }
+
+            @keyframes cool{
+                from{opacity:0;top:60px;}
+                from{opacity:1;top:0px;}
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <h1>The Work</h1>
+            <img src="parralax_1.jpeg" width="50px" height="50px">
+            <ul>
+                <a onclick="show('product')" ><li>Products</li></a>
+                <a onclick="show('service')"><li>Our Services</li></a>
+                <a onclick="show('contact')"><li>Contact Us</li></a>
+                <a onclick="show('about')"><li>About Us</li></a>
+                <a onclick="show('home')"><li>Home</li></a>
+            </ul>
+        </div>
+
+        <div id="home" class="content">
+
+            <h1> Home </h1>
+            <p> 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo magni doloremque officia consequuntur dolor placeat earum ducimus laudantium nihil sint, voluptate iste quisquam consectetur. Distinctio ab aperiam consequatur dolor laudantium doloremque! Eaque, tempore blanditiis repudiandae minima ipsam nesciunt architecto vitae, ab rem ducimus neque cumque, quae exercitationem voluptatum quis impedit laborum. Aliquid voluptatum adipisci impedit alias nihil commodi placeat delectus omnis molestias! Esse quis architecto corrupti quo itaque nostrum error voluptate aperiam voluptas! Doloremque, rem unde voluptatibus repellat, corrupti non magnam dignissimos commodi architecto hic officiis quos, perferendis quam. Molestiae, eveniet. Dicta distinctio adipisci beatae officia id ullam ab est veniam consequuntur odio? Optio repellendus, doloremque provident quibusdam sint velit. Sit amet mollitia dolorem dolores assumenda soluta quidem perferendis ipsam neque explicabo, delectus blanditiis, magni ratione velit veritatis hic et consequuntur fugiat quibusdam? Asperiores beatae eaque, aliquid laboriosam culpa rem quo dolor assumenda nesciunt, natus nihil vero ab velit vitae libero. Amet inventore commodi, adipisci molestiae ducimus suscipit officiis voluptate, accusamus voluptatibus, ipsum impedit. Rerum, atque accusantium, fugit praesentium ipsum esse quo possimus, ducimus est laudantium animi perferendis unde velit natus delectus aut perspiciatis placeat nulla ad? Laboriosam, minima exercitationem, nam dignissimos et sunt rem reprehenderit earum voluptas a eveniet!
+            </p>
+
+        </div>
+
+        <div id="about" class="content">
+
+            <h1> About </h1>
+            <p> 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia velit excepturi voluptatibus magni! Repudiandae inventore obcaecati dignissimos debitis soluta omnis molestias expedita minima tenetur repellat asperiores, at animi eveniet eius sapiente iste quis sed. Nostrum ratione dolore veritatis molestias, quos eius blanditiis iusto voluptates? Veniam nisi eos numquam odio nihil eum, distinctio magnam hic qui aliquam velit? Obcaecati asperiores impedit, cum ratione veritatis consectetur aut praesentium esse magni dolore, vero, earum expedita nam! Ullam nam ipsa cumque laboriosam sapiente illum, perspiciatis facere! Eligendi, modi obcaecati exercitationem incidunt porro autem facilis ratione fugiat illum laboriosam magni expedita at molestias sunt dolorum optio sed odit eum alias deserunt aliquam! Tenetur, fugit! Consequuntur nisi provident, mollitia ipsa quia enim suscipit, recusandae perferendis similique autem eaque. Nostrum iste harum, dignissimos possimus enim mollitia beatae fuga aliquam. Asperiores obcaecati dolorem placeat nemo illo, vel deleniti minima alias architecto suscipit consequuntur laborum facere eum nulla dicta harum minus, tenetur explicabo nam, eos nisi soluta a amet. Omnis iure minima, consectetur, illo aliquid aperiam repellendus sit debitis, voluptatum enim obcaecati fugiat inventore consequuntur est! Perferendis animi ipsa deleniti quidem nihil ipsum itaque autem quos alias pariatur! Dolor pariatur vel velit placeat in iusto voluptate delectus corporis id?
+            </p>
+
+        </div>
+
+        <div id="contact" class="content">
+
+            <h1> Contact </h1>
+            <p> 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, iusto accusantium! Provident amet dolorum esse earum dolor enim voluptates assumenda nulla blanditiis eveniet, corrupti necessitatibus nihil nesciunt asperiores, accusamus quam quo reprehenderit recusandae sed. Reprehenderit et fuga hic ut, consequuntur debitis nesciunt eos repellendus veniam quas facilis quam dolorem non cum assumenda. Nisi maxime eveniet nemo error deleniti rerum tempora libero rem fugiat! Cupiditate impedit commodi incidunt a. Dolor saepe, cum harum quo distinctio hic fugit, similique, natus porro odit perferendis quos id magnam! At illum aliquid qui quo mollitia et odit quas magni autem ut dolor corporis nisi consequuntur, nihil nesciunt consectetur esse distinctio iusto vel accusantium enim sint libero possimus. Enim mollitia quos quisquam odio voluptatem, facilis quia! Ut consectetur nam nisi voluptatum, eos illo itaque! Error, velit minima. Minima autem odit saepe. Atque blanditiis libero voluptatum porro minus corporis deserunt perferendis illum eaque quaerat. Itaque rerum labore doloribus distinctio at vitae dolore consectetur nostrum in, adipisci porro, impedit cupiditate voluptatem. Quisquam hic eligendi explicabo cum repudiandae voluptas perspiciatis consequuntur similique eius quam adipisci nobis est iure tempore rerum voluptatibus nihil quasi enim quaerat ducimus alias, assumenda quas! Corrupti velit eveniet explicabo tempore esse eius at quo non.
+            </p>
+
+        </div>
+
+        <div id="service" class="content">
+
+            <h1> Services </h1>
+            <p> 
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci doloremque dolore saepe aspernatur dicta sed est, obcaecati nulla esse modi doloribus quia. Maiores soluta, corrupti consequuntur repudiandae, assumenda, provident magni accusantium unde debitis quod expedita vero vitae ducimus recusandae deserunt. Dolorum voluptate sint nostrum eligendi fugit necessitatibus ipsum ab vero delectus similique ipsa eum aliquam consequuntur id accusamus, magni porro officiis aspernatur, facere harum dolore praesentium cumque non facilis. Deserunt molestias modi, incidunt facere temporibus perferendis dolor. Est sed possimus consequatur culpa suscipit cupiditate vero harum nulla doloribus! Est libero itaque atque exercitationem praesentium aspernatur nisi debitis eius natus eos qui nesciunt ratione, provident unde ducimus, temporibus quibusdam reprehenderit quia laborum repellat ex animi facere. Temporibus officiis harum magnam illum placeat, accusamus blanditiis ad. Ea alias provident sunt cupiditate, voluptatum quaerat sequi excepturi fugit id doloribus dolores? Laborum nesciunt sit corporis exercitationem autem dolore quidem ab reprehenderit, ut magnam repudiandae amet quasi dolores? Modi ut mollitia nam repellendus omnis ab? Nihil alias accusamus nam tenetur asperiores incidunt non, magni odio suscipit corporis iusto deleniti et recusandae. Accusantium corporis obcaecati porro modi ullam nam, praesentium perferendis iusto! Quos sint, illo praesentium dolorum vero, hic ut consequatur maxime natus itaque laudantium sapiente?
+            </p>
+
+        </div>
+
+        <div id="product" class="content">
+
+            <h1> Products </h1>
+            <p> 
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo dolorem dolore esse fugiat perferendis mollitia quibusdam repellendus architecto beatae, laborum, quae explicabo nihil porro recusandae pariatur aliquam enim ipsam corrupti voluptate asperiores repudiandae. Laborum nobis iure vero! Earum, saepe? Asperiores atque corporis maxime quibusdam autem nihil magnam vero facilis possimus ex natus inventore quisquam expedita architecto consequatur culpa dicta exercitationem dolore eveniet assumenda a, vel recusandae pariatur reiciendis? Amet veniam quidem nisi. Doloribus earum provident dolorem, maxime quisquam eum aliquam molestias eaque molestiae minus, deleniti repudiandae enim? Ipsa magnam exercitationem nobis aperiam, tenetur modi aut necessitatibus libero at mollitia a, rem iusto explicabo dolore, quis quasi sint ut? Provident, perspiciatis vel facere rem ab quaerat optio aliquam unde libero atque eum? Repellat, eaque molestiae alias magnam officiis dolor fugiat! Molestiae illum, iusto voluptatibus maxime nostrum reiciendis tempora! Minus commodi nulla unde quibusdam quisquam deserunt. Repudiandae in hic omnis fuga pariatur, velit harum sequi doloribus incidunt cupiditate. Doloribus natus laboriosam nemo quas iste ipsa quos nam error numquam obcaecati iure veritatis laudantium sapiente harum, at, aperiam voluptatum eum. Voluptate fugit praesentium commodi nostrum maiores sed quidem! Saepe, illum, sapiente soluta assumenda, pariatur ea voluptate exercitationem mollitia labore veritatis consequuntur fugiat ab!
+
+        </div>
+
+
+
+
+        <script>
+
+            function show(id){
+                var content=document.getElementsByClassName("content") ; 
+                for(var i=0 ; i < content.length ; i++){
+                    content[i].style.display="none";
+                }
+                document.getElementById(id).style.display="block";
+            }
+
+        </script>
+    </body>
+</html>

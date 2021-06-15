@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Time Zones</title>
+    </head>
+    <body>
+        <h1>Select Time Zone</h1>
+        <select id="zone">
+            <option value="Asia/Kolkata">Kerala</option>
+            <option value="Asia/Dubai">Dubai</option>
+            <option value="Europe/Belfast">London</option>
+            <option value="Africa/Johannesburg">Johannesburg</option>
+        </select>
+        <button onclick="getTime()">Show time</button>
+        <div id="time"></div>
+        <script>
+            function clock()
+            {
+                var x = new Date();
+                var zone = document.getElementById("zone").value;
+                var time= x.toLocaleString( "en-US" , {timeZone : zone} );
+                document.getElementById("time").innerHTML=time;
+            }
+            function getTime(){
+                setInterval(clock,1000);
+            }    
+        </script>
+    </body>
+</html>

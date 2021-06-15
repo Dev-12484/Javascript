@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calcu</title>
+    </head>
+    <body>
+            <p>Number 1</p>
+            <input type="text" placeholder="number 1" id="nu">
+            <br>
+            <br>
+            <p>Number 2</p>
+            <input type="text" placeholder="number 2" id="num">
+            <br>
+            <br>
+            <select id="op">
+                <option value="+">Addition</option>
+                <option value="-">Subtraction</option>
+                <option value="*">Multiplication</option>
+                <option value="/">Division</option>
+            </select>
+            <br><br>
+            <div id="result"></div>
+            <br><br>
+            <button onclick="calculate()">Calculate</button>
+            <script>
+                function calculate(){
+                    var num1=Number(document.getElementById("nu").value);
+                    var num2=Number(document.getElementById("num").value);
+                    var option=document.getElementById("op").value;
+                    var ans ;
+
+                    if(option == "+"){
+                        var ans = num1 + num2;
+                    }
+                    else if(option == "-"){
+                        var ans = num1 - num2 ;
+                    }
+                    else if(option == "*"){
+                        var ans = num1 * num2 ;
+                    }
+                    else if(option == "/"){
+                        var ans = num1 / num2 ;
+                    }
+
+                    document.getElementById("result").innerHTML = ans;
+                }
+            </script>
+    </body>
+</html>
